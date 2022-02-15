@@ -26,6 +26,7 @@ itertools = "0.10.1"
 log = "0.4.11"
 miow = "0.3.6"
 net2 = "0.2.37"
+<<<<<<< HEAD
 solana-bpf-rust-invoke = { path = "rust/invoke", version = "=1.9.7"}
 solana-bpf-loader-program = { path = "../bpf_loader", version = "=1.9.7"}
 solana-bpf-rust-realloc = { path = "rust/realloc", version = "=1.9.7"}
@@ -39,6 +40,21 @@ solana-program-runtime = { path = "../../program-runtime", version = "=1.9.7" }
 solana-sdk = { path = "../../sdk", version = "=1.9.7" }
 solana-transaction-status = { path = "../../transaction-status", version = "=1.9.7" }
 solana-account-decoder = { path = "../../account-decoder", version = "=1.9.7" }
+=======
+solana-account-decoder = { path = "../../account-decoder", version = "=1.10.0" }
+solana-bpf-rust-invoke = { path = "rust/invoke", version = "=1.10.0"}
+solana-bpf-loader-program = { path = "../bpf_loader", version = "=1.10.0"}
+solana-bpf-rust-realloc = { path = "rust/realloc", version = "=1.10.0"}
+solana-bpf-rust-realloc-invoke = { path = "rust/realloc_invoke", version = "=1.10.0"}
+solana-cli-output = { path = "../../cli-output", version = "=1.10.0" }
+solana-logger = { path = "../../logger", version = "=1.10.0" }
+solana-measure = { path = "../../measure", version = "=1.10.0" }
+solana_rbpf = "=0.2.23"
+solana-runtime = { path = "../../runtime", version = "=1.10.0" }
+solana-program-runtime = { path = "../../program-runtime", version = "=1.10.0" }
+solana-sdk = { path = "../../sdk", version = "=1.10.0" }
+solana-transaction-status = { path = "../../transaction-status", version = "=1.10.0" }
+>>>>>>> c42b80f09 (Add simulation detection countermeasure (#22880))
 
 [[bench]]
 name = "bpf_loader"
@@ -83,6 +99,7 @@ members = [
     "rust/sha",
     "rust/sibling_inner_instruction",
     "rust/sibling_instruction",
+    "rust/simulation",
     "rust/spoof1",
     "rust/spoof1_system",
     "rust/sysvar",
